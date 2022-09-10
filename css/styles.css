@@ -1,0 +1,76 @@
+section.banner {
+    z-index: 0;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.rounded-circle w-75{
+    position: absolute;
+    z-index: 1;
+    background-color: aliceblue;
+    height: auto;
+    width:min-content;
+}
+
+i.fa-brands.fa-instagram.fa-2xl,
+i.fa-brands.fa-linkedin.fa-2xl,
+i.fa-brands.fa-github.fa-2xl,
+i.fa-solid.fa-user.fa-2xl,
+i.fa-solid.fa-user-lock.fa-2xl{
+    color: aliceblue;
+}
+
+i.fa-brands.fa-instagram.fa-2xl:hover{
+color: rgb(233, 13, 203);
+}
+
+i.fa-brands.fa-linkedin.fa-2xl:hover{
+    color: rgb(22, 74, 245);
+}
+
+i.fa-brands.fa-github.fa-2xl:hover{
+    color: rgb(0, 0, 0);
+}
+
+i.fa-solid.fa-user-lock.fa-2xl:hover{
+    color: #f00352;
+}
+
+.navbar-brand {
+    --bs-navbar-brand-color:aliceblue;   
+}
+
+.bg {
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+
+.list-group-item {
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+}
+
+section.about {
+    margin-top: 2rem;
+}
+
+section.admin, section.panel{
+    margin-top: 1cm;
+}
+
+section.experiencia {
+    margin-top: 10rem;
+}
+
+section.habilidades {
+    background: rgb(244,0,160);
+    background: linear-gradient(203deg, rgba(244,0,160,1) 8%, rgba(247,112,98,1) 56%, rgba(254,81,150,1) 86%);
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 10rem;
+    height: auto;
+    width: auto;
+}
+
+.progress {
+    margin-top: 1rem;
+}
