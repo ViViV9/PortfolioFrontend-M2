@@ -141,7 +141,7 @@ section.experiencia, section.educacion, section.habilidades{
     font-family: 'Expletus Sans', cursive;
 }
 /*=====Font info cursos====*/
-.container.text-center{
+.col-9.descripcion{
     font-family: 'Roboto', sans-serif;
 }
 
