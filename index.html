@@ -9,24 +9,37 @@
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/efb4c49036.js" crossorigin="anonymous"></script>
+<!--Google Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital@1&family=Roboto:ital,wght@0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="Assets/IMG/APLogo-20-20.png" alt="..." width="20%" height=""> 
-            #YoProgramo
-          </a>
-      <ul class="list-group list-group-horizontal">
-        <li class="list-group-item"><a href="https://www.instagram.com/vivianavd_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-        <li class="list-group-item"><a href="#" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
-        <li class="list-group-item"><a href="#" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-        <li class="list-group-item">
-          <i class="fa-solid fa-user-lock fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          </i>
-        </li>
-      </ul>
-<!-- Modal -->
+  <nav class="navbar navbar-expand-lg bg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="" target="_blank">
+        <img src="Assets/IMG/APLogo-20-20.png"  alt="Argentina Programa" width="20%" height=""> 
+        #YoProgramo
+      </a>
+      <button class="navbar-toggler position-absolute top-50 end-0 translate-middle-y fa-xl text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa-solid fa-circle-chevron-down"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><a href="https://www.instagram.com/vivianavd_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+            <li class="list-group-item"><a href="#" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+            <li class="list-group-item"><a href="#" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+            <li class="list-group-item">
+              <i class="fa-solid fa-user-lock fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              </i>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -64,29 +77,39 @@
       
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+        <br>
+        <small> Si no tenes cuenta <a href="registro.html">Registrate</a></small>
       </div>
     </div>
   </div>
 </div>
-</nav>
+
+
 <!--Banner-->
-<header class="banner">
-  <img src="Assets/IMG/banner-pueba.png" class="d-block w-100 img-fluid" alt="..." >
- 
+<header>
+  <section class="banner">
+    <div class="container text-center">
+      <h1 class="nombre text-center">Viviana Verachtert</h1><br>
+      <h3 class="titulo text-center">Desarrolladora Web Full Stack</h3>  
+    </div>
+  </section>
 </header>
+
 <main>
   <!-- Acerca de mi -->
   <section id="sobre-mi" class="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-3"> 
-            <img src="Assets/IMG/IMG_20220819_215820.jpg" class="rounded-circle w-100"  alt="..." title="...">
-            <h3>Viviana Verachtert</h3> 
+    <div class="foto-perfil">
+      <img src="Assets/IMG/IMG_20220819_215820.jpg" class="rounded-circle w-50"  alt="Viviana Verachtert" title="..."/>
+    </div>
+    <div class="container-fluid text-center">
+      <div class="row info-personal">
+        <div class="col-2 align-self-start"> 
         </div>
-        <div class="col-8 mt-3">
+        <div class="col-8 align-self-center" id="presentacion">
           <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus excepturi quos amet ipsum tempore eius cum ipsam maxime, minima quaerat odit itaque nobis nulla vitae, ut praesentium ab repudiandae consequatur?</h5>
-          </div>
-        <div class="col-1">
+        <a href="#" download="#" type="button" class="btn btn-outline">Descargar CV</a>
+        </div>
+        <div class="col-2 align-self-end"> 
         </div>
       </div>
     </div>
@@ -95,66 +118,149 @@
   <!-- Experiencia-->
   <section id="experiencia" class="experiencia">
     <div class="container text-center">
-      <div class="row">
-        <div class="col-3">
-
-        </div>
-        <div class="col-6">
-
-        </div>
-        <div class="col-3">
-
-        </div>
-      </div>
+      <h2 class="subtitulo">Experiencia</h2>
+      <p class="texto-experiencia mt-4" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At inventore a totam maiores perferendis exercitationem quod ullam illo dignissimos quaerat laudantium, adipisci ab aspernatur neque nulla distinctio, quibusdam molestiae tempore?</p>
     </div>
   </section>
 
-  <!-- Educacion -->
-  <section id="educacion" class="educacion">
+  <!-- Educación -->
+  <section id="educacion" class="educacion container container-fluid rounded shadow-sm">
+    <h2 class= "subtitulo" style="text-align:center;">Educación</h2>
     <div class="container text-center">
-      <div class="row">
-        <div class="col-3">
-
+      <div class="row mt-4"> 
+        <h3 class="titulo-curso p-2"> Curso: <strong>"Argentina Programa"</strong></h3>
+        <div class="col-2">
+          <img src="Assets/IMG/logo-argentina-programa-ng.jpg" class= "rounded w-30" alt="" width="100%">
         </div>
-        <div class="col-6">
-
-        </div>
-        <div class="col-3">
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Hard & Soft Skills-->
-  <section id="habilidades" class="habilidades">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-3">
-          <h2>HTML</h2>
-        </div>
-        <div class="col-8">
-          <div class="progress">
-            <div class="progress-bar bg-secondary" role="progressbar" aria-label="Danger example" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="50"><strong>50%</strong></div>
-          </div>
-          <br>
+        <div class="col-9">
+          <ul>
+            <li style="text-align: justify;">Primera etapa <strong>#Se Programar</strong>
+              <p style="text-align: justify;">Desde: </p>
+              <p style="text-align: justify;">Hasta: </p></li>
+            <li style="text-align: justify;">Segunda etapa <strong>#Yo Programo</strong>
+              <p style="text-align: justify;">Desde: </p>
+              <p style="text-align: justify;">Hasta: </p></li>
+          </ul>
         </div>
         <div class="col">
-          
         </div>
       </div>
     </div>
+  <hr>      
+  <div class="container text-center">
+    <div class="row mt-4">
+      <h3 class="titulo-curso p-2"><strong>"Secundario"</strong></h3>
+      <div class="col-2 p-2">
+        <img src="Assets/IMG/Logo-oportunidades.png" class= "rounded w-30" alt="" width="100%">
+      </div>
+      <div class="col-9">
+        <p style="text-align: justify;">Institución: <strong>Programa Oportunid@des </strong>perteneciente a la Dirección de Educación de Jóvenes y Adultos, CGE Provincia de Entre Ríos. </p>
+        <p style="text-align: justify;">Título: <strong>Bachiller en Economia y Administración</strong></p>
+        <p style="text-align: justify;">Desde: 2019</p>
+        <p style="text-align: justify;">Hasta: 2022</p>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container text-center">
+    <div class="row mt-4">
+      <h3 class="titulo-curso p-2">Curso: <strong> "Confeccionista de Alta Costura"</strong></h3>
+      <div class="col-2 p-2">
+   <img src="Assets/IMG/Logo-EJA.jpg" class= "rounded w-30" alt="" width="60%">
+      </div>
+      <div class="col-9">
+        <p style="text-align: justify;">Institución: <strong></strong>Centro de formación para Jovenes y Adultos</p>
+        <p style="text-align: justify;">Título: <strong>Confeccionista de Alta Costura</strong></p>
+        <p style="text-align: justify;">Desde: </p>
+        <p style="text-align: justify;">Hasta: </p>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container text-center">
+    <div class="row mt-4">
+      <h3 class="titulo-curso p-2">Curso: <strong>Confeccionista a medida</strong></h3>
+      <div class="col-2 p-2">
+        <img src="Assets/IMG/Logo-EJA.jpg" class= "rounded w-30" alt="" width="60%">
+      </div>
+      <div class="col-9">
+        <p style="text-align: justify;">Institución: <strong>Asociación Civil para la investigación y el desarrollo de la ciencia informática (ACIDCI)</strong> </p>
+        <p style="text-align: justify;">Título: <strong> Modista</strong></p>
+        <p style="text-align: justify;">Desde: </p>
+        <p style="text-align: justify;">Hasta: </p>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+  <hr> 
+    <div class="container text-center">
+      <div class="row mt-4">
+        <h3 class="titulo-curso p-2">Curso: <strong> "Operadora de PC"</strong></h3>
+        <div class="col-2 p-2">
+          <img src="Assets/IMG/logo-pc.jpg" class= "rounded w-30" alt="" width="60%">
+        </div>
+        <div class="col-9">
+          <p style="text-align: justify;">Institución: <strong>Asociación Civil para la investigación y el desarrollo de la ciencia informática (ACIDCI)</strong> </p>
+          <p style="text-align: justify;">Título: <strong>Operadora de PC</strong> con orientación administrativa.</p>
+          <p style="text-align: justify;">Desde: </p>
+          <p style="text-align: justify;">Hasta: </p>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+  <br>
+</section>
+
+  <!-- Hard & Soft Skills-->
+  <section id="habilidades" class="habilidades container container-fluid rounded shadow-sm">
+    <div class="container">
+      <h2 class="subtitulo text-center">Hard & Soft Skills</h2>
+      <p class= "texto-habilidades mt-4" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta labore quia veritatis commodi quos a consequatur. Nobis aspernatur fuga ab, officiis voluptatum pariatur quaerat, nesciunt magnam quibusdam itaque, nulla quos.</p>
+    </div>
+    
+    <div class="row progress-circle-container text-center">
+      <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+        <div class="progress-circle progress-50"><span><i class="fa-brands fa-css3-alt"></i></span></div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+        <div class="progress-circle progress-75"><span>75</span></div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+        <div class="progress-circle progress-80"><span><i class="fa-brands fa-angular"></i></span></div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+        <div class="progress-circle progress-90"><span><i class="fa-brands fa-html5"></i></span></div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+        <div class="progress-circle progress-100"><span>100</span></div>
+      </div>
+    </div>
+    <br>
   </section>
 
   <!-- Proyectos -->
   <section id="proyectos" class="proyectos">
     <div class="container text-center">
+      <h2 class="subtitulo text-center">Proyectos</h2>
+      <p class= "texto-proyectos mt-4" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta labore quia veritatis commodi quos a consequatur. Nobis aspernatur fuga ab, officiis voluptatum pariatur quaerat, nesciunt magnam quibusdam itaque, nulla quos.</p>
       <div class="row">
         <div class="col-3">
 
         </div>
         <div class="col-6">
-
+          <div class="card">
+            <img src="Assets/IMG/Portada-proyecto.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">"Mi portfolio"</h5>
+              <p class="card-text">Mi primer proyecto como desarrolladora full stack.</p>
+            </div>
+          </div>
         </div>
         <div class="col-3">
           
@@ -164,9 +270,24 @@
   </section>
 </main>
 
- <!-- Pie de pagina -->
- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fe5196" fill-opacity="1" d="M0,64L120,74.7C240,85,480,107,720,106.7C960,107,1200,85,1320,74.7L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
- 
+<!--Footer-->
+<section id="footer" class="footer">
+  <div class="container-fluid bg  py-1 px-sm-1 px-md-5">
+    <div class="container text-center py-3">
+      <div class="d-flex justify-content-center text-white mb-3">
+        <a class="btn btn-social mr-2" href="#"><i class="fab fa-github"></i></a>
+        <a class="btn btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-socialn mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-social" href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p style="color: aliceblue;">&copy Copyright Viviana Verachtert - 2022</p>
+      <div class="position-relative">
+        <div class="position-absolute bottom-0 end-0"><a href="#" class="btn text-white"><i class="fa-solid fa-angle-up "></i></a></div>
+      </div>
+    </div>
+  </div>  
+</section>
+
  <!-- JavaScript Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

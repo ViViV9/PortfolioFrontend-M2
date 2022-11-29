@@ -1,18 +1,23 @@
-section.banner {
-    z-index: 0;
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.rounded-circle w-75{
-    position: absolute;
-    z-index: 1;
-    background-color: aliceblue;
-    height: auto;
-    width:min-content;
+.fa-solid.fa-circle-chevron-down{
+    color: aliceblue;
 }
 
+/* ===== Comienza Navbar ==== */
+.navbar-brand {
+    --bs-navbar-brand-color:aliceblue;   
+}
+
+.bg {
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+
+/* ===== Redes Sociales (Navbar)======*/
 i.fa-brands.fa-instagram.fa-2xl,
 i.fa-brands.fa-linkedin.fa-2xl,
 i.fa-brands.fa-github.fa-2xl,
@@ -37,40 +42,241 @@ i.fa-solid.fa-user-lock.fa-2xl:hover{
     color: #f00352;
 }
 
-.navbar-brand {
-    --bs-navbar-brand-color:aliceblue;   
-}
-
-.bg {
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-}
-
 .list-group-item {
     --bs-list-group-bg: transparent;
     --bs-list-group-border-color: transparent;
 }
 
+button.navbar-toggler{
+    border-color: transparent;
+}/* ===== termina Navbar =======*/
+
+/* Baner*/
+.banner {
+    background-image: url(../Assets/IMG/banner-full.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+/* Nombre y Apellido*/
+h1.nombre {
+    font-family: Georgia,serif;
+    font-style:italic;
+    color: rgb(241, 48, 129);
+    text-shadow: 2px 2px 4px #8d8585;
+    font-size: 4rem;
+    transform: translateY(10rem)
+}
+
+/* Titulo "Desarroladora Web Full Stack" */
+h3.titulo {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    transform: translateY(10rem);
+}
+
+/* ======Foto de Perfil =======*/
+.foto-perfil{
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-50%);
+    width: 70%;
+    padding-left: 5%;
+}
+
+ /* ====== Acerca de mi (texto) =======*/
+.row.info-personal{
+    height: 475px;
+    font-size: 10px;
+    font-family: 'Georgia', sans-serif;
+    text-align: justify;
+}
+
+#presentacion{
+    margin-top: 6rem;
+} /* ======Termina Texto======= */
+
 section.about {
-    margin-top: 2rem;
+    background-color:rgb(255, 247, 255);
+}
+
+/* ===== Boton descarga CV =====*/
+.btn.btn-outline{
+    background-color:#f04d84;
+    border: 2px solid;
+    font-size: x-small;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+main{
+    background-color: rgb(246, 250, 248);
+}
+
+/* ===== Secciones ======*/
+section.experiencia, section.educacion, section.habilidades{
+    margin-top: 4rem;
+    
+}
+
+#proyectos{
+    padding: 2rem;
+}
+
+
+/* ===== Subtitulos de cada seccion =====*/
+.subtitulo{
+    font-family: Georgia,serif;
+    font-style:italic;
+    color: rgb(241, 48, 129);
+    text-shadow: 2px 2px 4px #8d8585;
+    font-size: 3rem;
+}
+/*=====Titulo de Curso=======*/
+.titulo-curso {
+    font-family: 'Expletus Sans', cursive;
+}
+/*=====Font info cursos====*/
+.container.text-center{
+    font-family: 'Roboto', sans-serif;
 }
 
 section.admin, section.panel{
     margin-top: 1cm;
 }
 
-section.experiencia {
-    margin-top: 10rem;
+section.login, section.registro{
+    height: 50rem;
+    margin-top: 8%;
 }
 
-section.habilidades {
-    background: rgb(244,0,160);
-    background: linear-gradient(203deg, rgba(244,0,160,1) 8%, rgba(247,112,98,1) 56%, rgba(254,81,150,1) 86%);
-    background-repeat: no-repeat;
-    border-bottom-left-radius: 10rem;
-    height: auto;
-    width: auto;
+/* ===== Circulos de Progreso ===== */
+.progress-circle { 
+    position: relative; 
+    display: inline-block; 
+    margin: 1rem; 
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    background-color: #ebebeb; 
+} 
+.progress-circle:after { 
+    content: ''; 
+    display: inline-block; 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%; 
+    -webkit-animation: colorload 2s; 
+    animation: colorload 2s;
+} 
+
+.progress-circle span { 
+    font-size: 2rem; 
+    color: #8b8b8b; 
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    display: block; 
+    width: 90px; 
+    height: 90px; 
+    line-height: 90px; 
+    margin-left: -45px; 
+    margin-top: -45px; 
+    text-align: center; 
+    border-radius: 50%; 
+    background: #fff; 
+    z-index: 1; 
+} 
+
+.row.progress-circle-container.text-center{
+    max-width: 100%;
+}
+.progress-circle span:after { 
+    content: ""; 
+    font-weight: 600; 
+    color: #8b8b8b; 
 }
 
-.progress {
-    margin-top: 1rem;
+.progress-circle.progress-50:after { 
+    background-image: linear-gradient(-90deg, rgb(241, 48, 129) 50%, transparent 50%, transparent), linear-gradient(270deg, rgb(241, 48, 129) 50%, #ebebeb 50%, #ebebeb); 
+}
+
+.progress-circle.progress-75:after { 
+    background-image: linear-gradient(0deg, rgb(241, 48, 129) 50%, transparent 50%, transparent), linear-gradient(270deg, rgb(241, 48, 129) 50%, #ebebeb 50%, #ebebeb); 
+}
+
+.progress-circle.progress-80:after { 
+    background-image: linear-gradient(18deg, rgb(241, 48, 129) 50%, transparent 50%, transparent), linear-gradient(270deg, rgb(241, 48, 129) 50%, #ebebeb 50%, #ebebeb); 
+}
+
+.progress-circle.progress-90:after { 
+    background-image: linear-gradient(54deg, rgb(241, 48, 129) 50%, transparent 50%, transparent), linear-gradient(270deg, rgb(241, 48, 129) 50%, #ebebeb 50%, #ebebeb); 
+}
+
+.progress-circle.progress-100:after { 
+    background-image: linear-gradient(90deg, rgb(241, 48, 129) 50%, transparent 50%, transparent), linear-gradient(270deg, rgb(241, 48, 129) 50%, #ebebeb 50%, #ebebeb); 
+}
+
+
+@keyframes colorload { 
+    0% { opacity: 0; transform: rotate(0deg); } 100% { opacity: 1; transform: rotate(360deg); } 
+} /* ===== termina Circulos de progreso ===== */
+
+/* ===== Proyectos ====*/
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+}
+
+.card:hover{
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.19);
+    transform: translateY(-3%);
+}
+
+/* ===== Footer ====== */
+footer{
+    position:static;
+    position: unset;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.fa-solid.fa-angle-up{
+    color: aliceblue;
+}
+
+/* ===== Redes Sociales Footer ====== */
+.fab {
+    color: aliceblue;
+}
+
+.edicion{
+    height: 80vh;
+}
+
+
+#list-home-list.list-group-item-action.active{
+    background-color: #f01a61;
+    border-color: #f01a61;
+}
+
+#list-profile-list.list-group-item-action.active{
+    background-color: #f01a61;
+    border-color: #f01a61;
+}
+
+#list-messages-list.list-group-item-action.active{
+    background-color: #f01a61;
+    border-color: #f01a61;
+}
+
+#list-settings-list.list-group-item-action.active{
+    background-color: #f01a61;
+    border-color: #f01a61;
 }
