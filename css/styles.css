@@ -118,15 +118,18 @@ main{
 }
 
 /* ===== Secciones ======*/
-section.experiencia, section.educacion, section.habilidades{
+section.experiencia, section.educacion, section.habilidades, section.proyectos{
     margin-top: 4rem;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 #proyectos{
     padding: 2rem;
 }
 
+#footer {
+    font-family: Verdana, sans-serif;
+}
 
 /* ===== Subtitulos de cada seccion =====*/
 .subtitulo{
@@ -140,11 +143,16 @@ section.experiencia, section.educacion, section.habilidades{
 .titulo-curso {
     font-family: 'Expletus Sans', cursive;
 }
+.col .p-3{
+    background-color: rgb(235, 234, 236);
+}
 /*=====Font info cursos====*/
 .col-9.descripcion{
     font-family: 'Roboto', sans-serif;
 }
-
+.bg-light{
+    background-color: antiquewhite;
+}
 section.admin, section.panel{
     margin-top: 1cm;
 }
@@ -153,6 +161,7 @@ section.login, section.registro{
     height: 50rem;
     margin-top: 8%;
 }
+
 
 /* ===== Circulos de Progreso ===== */
 .progress-circle { 
@@ -230,7 +239,7 @@ section.login, section.registro{
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
-
+    font-family:'Segoe UI', sans-serif;
 }
 
 .card:hover{
