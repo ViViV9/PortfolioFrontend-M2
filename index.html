@@ -86,11 +86,11 @@
   </div>
 </div>
 
-
 <!--Banner-->
-<header>
+<header>    
   <section class="banner">
     <div class="container text-center">
+      <button class="btn banner"><i class="fa-solid fa-pen-to-square" type="button"></i></button>
       <h1 class="nombre text-center">Viviana Verachtert</h1><br>
       <h3 class="titulo text-center">Desarrolladora Web Full Stack</h3>  
     </div>
@@ -103,15 +103,31 @@
     <div class="foto-perfil">
       <img src="Assets/IMG/IMG_20220819_215820.jpg" class="rounded-circle w-50"  alt="Viviana Verachtert" title="..."/>
     </div>
-    <div class="container-fluid text-center">
+    <div class="container text-center">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-7"></div>
+          <div class="col-5">
+            <div *ngIf="usuarioLogueado">
+              <button class="btn"><i class="fa-solid fa-pen-to-square" type="button"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-grid gap-2  justify-content-md-end ">
+        <button class="btn me-md-2 d-md-block" type="button"><i class="fa-solid fa-pencil"></i></button>
+        <button class="btn" type="button"><i class="fa-solid fa-trash"></i></button>
+      </div>
       <div class="row info-personal">
-        <div class="col-2 align-self-start"> 
+        <div class="col-1 align-self-start">
         </div>
-        <div class="col-8 align-self-center" id="presentacion">
-          <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus excepturi quos amet ipsum tempore eius cum ipsam maxime, minima quaerat odit itaque nobis nulla vitae, ut praesentium ab repudiandae consequatur?</h5>
-        <a href="#" download="#" type="button" class="btn btn-outline">Descargar CV</a>
+        <div class="col-10 align-self-center" id="presentacion">
+          <p>¡Hola! Soy <strong> Viviana Verachtert </strong> y vivo en Colón, provincia de Entre Ríos, República Argentina. Desarrolladora Web Full Stack Jr.</p>
+          <p>Además realizo prendas a medida como modista en Alta Costura. </p>
+          <p>Me considero una persona creativa, responsable, con facilidad de adaptación y capacidad para trabajar en equipo. Busco un puesto desafiante y dinámico para continuar sumando experiencia, seguir aprendiendo y creciendo en conocimientos.</p>
+          <a href="#" download="#" type="button" class="btn btn-outline ">Descargar CV</a>
         </div>
-        <div class="col-2 align-self-end"> 
+        <div class="col-1 align-self-end"> 
         </div>
       </div>
     </div>
@@ -119,17 +135,22 @@
 
   <!-- Experiencia-->
   <section id="experiencia" class="experiencia container container-fluid rounded shadow-sm">
-    <div class="container text-center">
-      <h2 class="subtitulo">Experiencia</h2>
+    <div class="container ">
+      <h2 class="subtitulo text-center">Experiencia</h2>
+      
       <div class="row mt-4">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn me-md-2" type="button"><i class="fa-solid fa-pencil"></i></button>
+          <button class="btn" type="button"><i class="fa-solid fa-trash"></i></button>
+      </div>
         <div class="col-2">
           <img src="Assets/IMG/Viviana-logo-modista.png" class= "rounded w-80" alt="" width="100%">
         </div>
         <div class="col-9 descripcion descripcion">
-          <p style="text-align: justify;">Empresa: <strong></strong></p>
-          <p style="text-align: justify;">Cargo: <strong> Trabajo independiente</strong></p>
-          <p style="text-align: justify;">Desde: </p>
-          <p style="text-align: justify;">Hasta: </p>
+          <p style="text-align: justify;"><strong>Modista</strong></p>
+          <p style="text-align: justify;"><strong> Trabajo independiente</strong></p>
+          <p style="text-align: justify;">Desde: 2018</p>
+          <p style="text-align: justify;">Hasta: Actualidad</p>
         </div>
         <div class="col"></div>
       </div>
@@ -141,20 +162,21 @@
         <div class="col-9 descripcion descripcion">
           <p style="text-align: justify;">Empresa: <strong>Tsu Cosméticos</strong></p>
           <p style="text-align: justify;">Cargo: <strong>Vendedora por catálogo</strong></p>
-          <p style="text-align: justify;">Desde: </p>
-          <p style="text-align: justify;">Hasta: </p>
+          <p style="text-align: justify;">Desde: 2018</p>
+          <p style="text-align: justify;">Hasta: 2019</p>
         </div>
         <div class="col"></div>
-        <br>
-        <div class="row mt-4">
+      </div>
+      <br>
+      <div class="row mt-4">
         <div class="col-2">
           <img src="Assets/IMG/Logo-Avon.png" class= "rounded w-80" alt="" width="100%">
         </div>
         <div class="col-9 descripcion descripcion">
           <p style="text-align: justify;">Empresa: <strong> Avon</strong></p>
           <p style="text-align: justify;">Cargo: <strong>Vendedora por catálogo</strong></p>
-          <p style="text-align: justify;">Desde: </p>
-          <p style="text-align: justify;">Hasta: </p>
+          <p style="text-align: justify;">Desde: 2018</p>
+          <p style="text-align: justify;">Hasta: 2019</p>
         </div>
         <div class="col"></div>
       </div>
@@ -166,38 +188,30 @@
         <div class="col-9 descripcion descripcion">
           <p style="text-align: justify;">Empresa: <strong> Violetta</strong></p>
             <p style="text-align: justify;">Cargo: <strong>Vendedora por catálogo</strong></p>
-            <p style="text-align: justify;">Desde: </p>
-            <p style="text-align: justify;">Hasta: </p>
+            <p style="text-align: justify;">Desde: 2018</p>
+            <p style="text-align: justify;">Hasta: 2019</p>
         </div>
         <div class="col"></div>
       </div>
       <br>
-      <p class="texto-experiencia mt-4" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At inventore a totam maiores perferendis exercitationem quod ullam illo dignissimos quaerat laudantium, adipisci ab aspernatur neque nulla distinctio, quibusdam molestiae tempore?</p>
-      </div>
-      <div class="row mt-4">
-        <div class="col-2"></div>
-        <div class="col-9 descripcion"></div>
-        <div class="col"></div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-2"></div>
-        <div class="col-9 descripcion"></div>
-        <div class="col"></div>
-      </div>
     </div>
   </section>
 
   <!-- Educación -->
   <section id="educacion" class="educacion container container-fluid rounded shadow-sm">
     <h2 class= "subtitulo" style="text-align:center;">Educación</h2>
+    <div class="d-grid md-end">
+      <button class="btn me-md-2" type="button"><i class="fa-solid fa-pencil"></i></button>
+      <button class="btn" type="button"><i class="fa-solid fa-trash"></i></button>
+    </div>
     <div class="container text-center">
       <div class="row mt-4"> 
         <h3 class="titulo-curso p-2"> Curso: <strong>"Argentina Programa"</strong></h3>
         <div class="col-2">
-          <img src="Assets/IMG/Logo-ArgProg.png" class= "rounded-circle w-80" alt="" width="100%">
+          <img src="Assets/IMG/Logo-ArgProg.png" class= "rounded-circle w-80" alt="Logo Argentina Programa" width="100%">
         </div>
         <div class="col-9 descripcion">
-          <p style="text-align: justify;">Institución: <strong>Ministerio de Economía</strong></p>
+          <p style="text-align: justify;">Institución: <strong>Secretaría de Economía del Conocimiento, Ministerio de Economía de la Nación.</strong></p>
           <p style="text-align: justify;">Título: <strong> Desarrolladora Web Full Stack Jr. </strong></p>
           <div class="container px-4 text-center">
             <div class="row gx-3">
@@ -224,9 +238,26 @@
       <hr>
       <div class="container text-center">
         <div class="row mt-4">
+          <h3 class="titulo-curso p-2"> Curso: <strong> Idioma "Inglés"</strong></h3>
+          <div class="col-2 p-2">
+            <img src="Assets/IMG/Logo-CUI.png" class= "rounded-circle w-80" alt="Logo CUI" width="100%">
+          </div>
+          <div class="col-9 descripcion">
+            <p style="text-align: justify;">Institución: <strong>CUI</strong> "Centro Universitario de Idiomas", UBA.</p>
+            <p style="text-align: justify;">Título: <strong> Inglés con orientación en programación. </strong></p>
+            <p style="text-align: justify;">Desde: Diciembre del año 2022</p>
+            <p style="text-align: justify;">Hasta: Enero del año 2023</p>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container text-center">
+        <div class="row mt-4">
           <h3 class="titulo-curso p-2"><strong>"Secundario"</strong></h3>
           <div class="col-2 p-2">
-            <img src="Assets/IMG/Logo-oportunidades.png" class= "rounded-circle w-80" alt="" width="100%">
+            <img src="Assets/IMG/Logo-oportunidades.png" class= "rounded-circle w-80" alt="Logo programa oportunidades" width="100%">
           </div>
           <div class="col-9 descripcion">
             <p style="text-align: justify;">Institución: <strong>Programa Oportunid@des </strong>perteneciente a la Dirección de Educación de Jóvenes y Adultos, CGE Provincia de Entre Ríos. </p>
@@ -243,7 +274,7 @@
         <div class="row mt-4">
           <h3 class="titulo-curso p-2">Curso: <strong> "Confeccionista de Alta Costura"</strong></h3>
           <div class="col-2 p-2">
-       <img src="Assets/IMG/Logo-EJA.png" class= "rounded-circle w-80" alt="" width="100%">
+       <img src="Assets/IMG/Logo-EJA.png" class= "rounded-circle w-80" alt="Logo EJA" width="100%">
           </div>
           <div class="col-9 descripcion">
             <p style="text-align: justify;">Institución: <strong> Dirección de Educación de Jóvenes y Adultos. CGE Provincia de Entre Ríos</strong>  </p>
@@ -290,50 +321,74 @@
           </div>
         </div>
       <br>
-    </section>
+  </section>
 
   <!-- Hard & Soft Skills-->
   <section id="habilidades" class="habilidades container container-fluid rounded shadow-sm">
     <div class="container">
       <h2 class="subtitulo text-center">Hard & Soft Skills</h2>
-      <p class= "texto-habilidades mt-4" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta labore quia veritatis commodi quos a consequatur. Nobis aspernatur fuga ab, officiis voluptatum pariatur quaerat, nesciunt magnam quibusdam itaque, nulla quos.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn me-md-2" type="button"><i class="fa-solid fa-pencil"></i></button>
+        <button class="btn" type="button"><i class="fa-solid fa-trash"></i></button>
+      </div>
     </div>
-    
     <div class="row progress-circle-container text-center">
-      <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-        <div class="progress-circle progress-50"><span><i class="fa-brands fa-css3-alt"></i></span></div>
-      </div>
-      <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-        <div class="progress-circle progress-75"><span>75</span></div>
-      </div>
-      <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-        <div class="progress-circle progress-80"><span><i class="fa-brands fa-angular"></i></span></div>
-      </div>
-      <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+      <div class="col-sm-3 col-md-3 col-lg-3 text-center">
         <div class="progress-circle progress-90"><span><i class="fa-brands fa-html5"></i></span></div>
+        <p>"HTML"</p>
       </div>
-      <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-        <div class="progress-circle progress-100"><span>100</span></div>
+      <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+        <div class="progress-circle progress-50"><span><i class="fa-brands fa-css3-alt"></i></span></div>
+        <p>"CSS"</p>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+        <div class="progress-circle progress-90"><span><i class="fa-brands fa-bootstrap"></i></span></div>
+        <p>"Bootstrap"</p>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+        <div class="progress-circle progress-80"><span><i class="fa-brands fa-angular"></i></span></div>
+        <p>"Angular"</p>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+        <div class="progress-circle progress-50"><span><i class="fa-solid fa-language"></i></span></div>
+        <p>"Ingles"</p>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+        <div class="progress-circle progress-90"><span><i class="fa-solid fa-people-group"></i></span></div>
+        <p>"Trabajo en equipo"</p>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+        <div class="progress-circle progress-75"><span><i class="fa-solid fa-book-open"></i></span></div>
+        <p>""</p>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 text-center">
+        <div class="progress-circle progress-100"><span>100%</span></div>
+        <p>"Ganas de aprender"</p>
       </div>
     </div>
     <br>
   </section>
 
   <!-- Proyectos -->
-  <section id="proyectos" class="proyectos">
-    <div class="container text-center">
+  <section id="proyectos" class="proyectos container container-fluid rounded shadow-sm">
+    <div class="container">
       <h2 class="subtitulo text-center">Proyectos</h2>
-      <p class= "texto-proyectos mt-4" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta labore quia veritatis commodi quos a consequatur. Nobis aspernatur fuga ab, officiis voluptatum pariatur quaerat, nesciunt magnam quibusdam itaque, nulla quos.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn me-md-2" type="button"><i class="fa-solid fa-pencil"></i></button>
+        <button class="btn" type="button"><i class="fa-solid fa-trash"></i></button>
+      </div>
+      <p class= "texto-proyectos mt-4" style="text-align: justify;">
+        Mi primer proyecto como desarrolladora web full stack, es un Portfolio web; en el cual apliqué diferentes tecnologías, tanto para la parte del FrontEnd como Backend. 
+        Creando un diseño resceptivo y adaptable a cualquier dispositivo.</p>
       <div class="row">
         <div class="col-3">
-
         </div>
         <div class="col-6">
           <div class="card">
             <img src="Assets/IMG/Portada-proyecto.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">"Mi portfolio"</h5>
-              <p class="card-text">Mi primer proyecto como desarrolladora full stack.</p>
+              <p class="card-text"></p>
             </div>
           </div>
         </div>
@@ -343,6 +398,7 @@
       </div>
     </div>
   </section>
+  <br>
 </main>
 
 <!--Footer-->

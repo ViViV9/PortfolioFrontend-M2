@@ -14,7 +14,7 @@
 }
 
 .bg {
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    background-image: linear-gradient(to top, #d8268e 0%, #fe5196 100%);
 }
 
 /* ===== Redes Sociales (Navbar)======*/
@@ -69,14 +69,21 @@ h1.nombre {
     color: rgb(241, 48, 129);
     text-shadow: 2px 2px 4px #8d8585;
     font-size: 4rem;
-    transform: translateY(10rem)
+    transform: translateY(8rem)
 }
 
 /* Titulo "Desarroladora Web Full Stack" */
 h3.titulo {
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 2rem;
-    transform: translateY(10rem);
+    transform: translateY(8rem);
+}
+
+/*boton de edicion */
+.btn.banner{
+    position: absolute;
+    z-index: 0;
+    
 }
 
 /* ======Foto de Perfil =======*/
@@ -90,14 +97,14 @@ h3.titulo {
 
  /* ====== Acerca de mi (texto) =======*/
 .row.info-personal{
-    height: 475px;
-    font-size: 10px;
+    height: 42rem;
+    font-size: larger;
     font-family: 'Georgia', sans-serif;
     text-align: justify;
 }
 
 #presentacion{
-    margin-top: 6rem;
+    margin-top: 4rem;
 } /* ======Termina Texto======= */
 
 section.about {
@@ -118,9 +125,10 @@ main{
 }
 
 /* ===== Secciones ======*/
-section.experiencia, section.educacion, section.habilidades, section.proyectos{
+section.experiencia, section.educacion, section.habilidades, section.proyectos, section.panel{
     margin-top: 4rem;
     font-family: 'Roboto', sans-serif;
+    transition: 0.4s;
 }
 
 #proyectos{
@@ -153,9 +161,7 @@ section.experiencia, section.educacion, section.habilidades, section.proyectos{
 .bg-light{
     background-color: antiquewhite;
 }
-section.admin, section.panel{
-    margin-top: 1cm;
-}
+
 
 section.login, section.registro{
     height: 50rem;
@@ -168,8 +174,8 @@ section.login, section.registro{
     position: relative; 
     display: inline-block; 
     margin: 1rem; 
-    width: 120px; 
-    height: 120px; 
+    width: 100px; 
+    height: 100px; 
     border-radius: 50%; 
     background-color: #ebebeb; 
 } 
@@ -230,7 +236,6 @@ section.login, section.registro{
     background-image: linear-gradient(90deg, rgb(241, 48, 129) 50%, transparent 50%, transparent), linear-gradient(270deg, rgb(241, 48, 129) 50%, #ebebeb 50%, #ebebeb); 
 }
 
-
 @keyframes colorload { 
     0% { opacity: 0; transform: rotate(0deg); } 100% { opacity: 1; transform: rotate(360deg); } 
 } /* ===== termina Circulos de progreso ===== */
@@ -288,4 +293,10 @@ footer{
 #list-settings-list.list-group-item-action.active{
     background-color: #f01a61;
     border-color: #f01a61;
+}
+
+/*======Dashboard=====*/
+
+#dashboard{
+    background-color: rgb(226, 223, 223);
 }
