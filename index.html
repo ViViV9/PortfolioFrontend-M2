@@ -27,7 +27,7 @@
         <span class="fa-solid fa-circle-chevron-down"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg- 0 align-items-center">
           <ul class="list-group list-group-horizontal">
             <li class="list-group-item"><a href="https://www.instagram.com/vivianavd_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
             <li class="list-group-item"><a href="#" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
@@ -46,7 +46,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -87,12 +87,32 @@
 </div>
 
 <!--Banner-->
-<header>    
-  <section class="banner">
+<header>          
+  <section class="banner" id="banner">
     <div class="container text-center">
-      <button class="btn banner"><i class="fa-solid fa-pen-to-square" type="button"></i></button>
-      <h1 class="nombre text-center">Viviana Verachtert</h1><br>
-      <h3 class="titulo text-center">Desarrolladora Web Full Stack</h3>  
+      <!--Menu lateral-->
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="row align-items-center">
+            <div class="col-2 col-lg-2"></div>
+            <div class="col-sm-8 col-lg-8">
+              <h1 class="display-1">Viviana Verachtert</h1><br>
+              <h2 class="titulo-banner">Desarrolladora Web Full Stack</h2> 
+            </div>
+            <div class="col-2 col-lg-2">
+              <ul class="list-group list-group-vertical px-3 mb-2 bottom-0 end-0" id="menu" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                <li class="list-group-item list-group-item-action rounded-5"><a class="nav-link" href="#banner"><i class="fa-solid fa-house" ></i></a><span class="list-item-name fw-bold">Sobre mi</span></li>
+                <li class="list-group-item list-group-item-action rounded-5"><a class="nav-link" href="#experiencia"><i class="fa-solid fa-briefcase" ></i></a><span class="list-item-name fw-bold">Experiencia</span></li>
+                <li class="list-group-item list-group-item-action rounded-5"><a class="nav-link" href="#educacion"><i class="fa-solid fa-graduation-cap"></i></a><span class="list-item-name  fw-bold">Educación</span></li>
+                <li class="list-group-item list-group-item-action rounded-5"><a class="nav-link" href="#habilidades"><i class="fa-solid fa-star"></i></a><span class="list-item-name  fw-bold">Habilidades</span></li>
+                <li class="list-group-item list-group-item-action rounded-5"><a class="nav-link" href="#proyectos"><i class="fa-solid fa-folder"></i></a><span class="list-item-name fw-bold">Proyectos</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Banner-->
+      
     </div>
   </section>
 </header>
@@ -100,46 +120,37 @@
 <main>
   <!-- Acerca de mi -->
   <section id="sobre-mi" class="about">
-    <div class="foto-perfil">
+    <div class="foto-perfil" >
       <img src="Assets/IMG/IMG_20220819_215820.jpg" class="rounded-circle w-50"  alt="Viviana Verachtert" title="..."/>
     </div>
     <div class="container text-center">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-7"></div>
-          <div class="col-5">
-            <div *ngIf="usuarioLogueado">
-              <button class="btn"><i class="fa-solid fa-pen-to-square" type="button"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-grid gap-2  justify-content-md-end ">
-        <button class="btn me-md-2 d-md-block" type="button"><i class="fa-solid fa-pencil"></i></button>
-        <button class="btn" type="button"><i class="fa-solid fa-trash"></i></button>
-      </div>
       <div class="row info-personal">
         <div class="col-1 align-self-start">
         </div>
         <div class="col-10 align-self-center" id="presentacion">
+          <div class="container text-center">
+            <h2 class="subtitulo text-center">Acerca de mi</h2>
+          </div>
+          <br>
           <p>¡Hola! Soy <strong> Viviana Verachtert </strong> y vivo en Colón, provincia de Entre Ríos, República Argentina. Desarrolladora Web Full Stack Jr.</p>
           <p>Además realizo prendas a medida como modista en Alta Costura. </p>
           <p>Me considero una persona creativa, responsable, con facilidad de adaptación y capacidad para trabajar en equipo. Busco un puesto desafiante y dinámico para continuar sumando experiencia, seguir aprendiendo y creciendo en conocimientos.</p>
-          <a href="#" download="#" type="button" class="btn btn-outline ">Descargar CV</a>
+          <a href="#" download="#" type="button" class="btn btn-outline "><i class="fa-solid fa-download"> Descargar CV</i></a>
         </div>
         <div class="col-1 align-self-end"> 
+      
         </div>
       </div>
     </div>
   </section>
-
+  
   <!-- Experiencia-->
   <section id="experiencia" class="experiencia container container-fluid rounded shadow-sm">
-    <div class="container ">
-      <h2 class="subtitulo text-center">Experiencia</h2>
+    <div class="container text-center" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <h2 class="subtitulo text-center">Experiencia Laboral</h2>
       
       <div class="row mt-4">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <div class="d-flex justify-content-end">
           <button class="btn me-md-2" type="button"><i class="fa-solid fa-pencil"></i></button>
           <button class="btn" type="button"><i class="fa-solid fa-trash"></i></button>
       </div>
@@ -199,8 +210,8 @@
 
   <!-- Educación -->
   <section id="educacion" class="educacion container container-fluid rounded shadow-sm">
-    <h2 class= "subtitulo" style="text-align:center;">Educación</h2>
-    <div class="d-grid md-end">
+    <h2 class= "subtitulo" style="text-align:center;" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">Educación</h2>
+    <div class="d-flex justify-content-end">
       <button class="btn me-md-2" type="button"><i class="fa-solid fa-pencil"></i></button>
       <button class="btn" type="button"><i class="fa-solid fa-trash"></i></button>
     </div>
@@ -325,9 +336,21 @@
 
   <!-- Hard & Soft Skills-->
   <section id="habilidades" class="habilidades container container-fluid rounded shadow-sm">
-    <div class="container">
+    <div class="container" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
       <h2 class="subtitulo text-center">Hard & Soft Skills</h2>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+       <!--<div class="container text-center">
+      <div class="row">
+        <div class="col-7"></div>
+        <div class="col-5">
+          <div *ngIf="usuarioLogueado">
+            <button class="btn"><i class="fa-solid fa-pen-to-square" type="button"></i></button>
+            <button class="btn"><i class="fa-regular fa-floppy-disk" type="button"></i></button>
+            <button class="btn"><i class="fa-solid fa-trash-can" type="button"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+      <div class="d-flex justify-content-end">
         <button class="btn me-md-2" type="button"><i class="fa-solid fa-pencil"></i></button>
         <button class="btn" type="button"><i class="fa-solid fa-trash"></i></button>
       </div>
@@ -371,11 +394,14 @@
 
   <!-- Proyectos -->
   <section id="proyectos" class="proyectos container container-fluid rounded shadow-sm">
-    <div class="container">
+    <div class="container"data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" >
       <h2 class="subtitulo text-center">Proyectos</h2>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <div class="d-flex justify-content-end">
         <button class="btn me-md-2" type="button"><i class="fa-solid fa-pencil"></i></button>
         <button class="btn" type="button"><i class="fa-solid fa-trash"></i></button>
+      </div>
+      <div class="btn-group" role="group" aria-label="First group">
+        
       </div>
       <p class= "texto-proyectos mt-4" style="text-align: justify;">
         Mi primer proyecto como desarrolladora web full stack, es un Portfolio web; en el cual apliqué diferentes tecnologías, tanto para la parte del FrontEnd como Backend. 
@@ -411,9 +437,9 @@
         <a class="btn btn-socialn mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
         <a class="btn btn-social" href="#"><i class="fab fa-instagram"></i></a>
       </div>
-      <p style="color: aliceblue;">&copy Copyright Viviana Verachtert - 2022</p>
+      <p style="color: rgb(240, 248, 255);">&copy Copyright Viviana Verachtert - 2022</p>
       <div class="position-relative">
-        <div class="position-absolute bottom-0 end-0"><a href="#" class="btn text-white"><i class="fa-solid fa-angle-up "></i></a></div>
+        <a href="#" class=""><i class="fa-regular fa-circle-up"></i></a>
       </div>
     </div>
   </div>  

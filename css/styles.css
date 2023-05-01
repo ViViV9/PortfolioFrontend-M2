@@ -17,6 +17,8 @@
     background-image: linear-gradient(to top, #d8268e 0%, #fe5196 100%);
 }
 
+
+
 /* ===== Redes Sociales (Navbar)======*/
 i.fa-brands.fa-instagram.fa-2xl,
 i.fa-brands.fa-linkedin.fa-2xl,
@@ -62,36 +64,91 @@ button.navbar-toggler{
     height: 500px;
 }
 
+/* Menú Lateral*/
+#menu{
+    z-index: 2;
+    position: absolute;
+}
+
+.list-group-item.list-group-item-action {
+    list-style-type: none;
+    flex-basis: 80%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.2s ease;
+    cursor: pointer;
+    color: #2d2d2e;
+    text-shadow: 2px 2px 4px #f5efef;
+  }
+
+  .list-item-name {
+    font-size: 14px;
+    font-weight: 200;
+    position: absolute;
+    transform: translate(0, 50px);
+    transition: transform 0.5s ease, opacity 0.2s ease;
+    opacity: 0;
+  }
+  
+  .list-group-item.list-group-item-action:hover {
+    color: rgb(247, 22, 108);
+    transform: translateY(-5px);
+    background-color: transparent;
+  }
+
+  .list-group-item.list-group-item-action:hover .list-item-name {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+  
+  @media (max-width: 200px) {
+    .navbar-menu {
+      flex-direction: column;
+      align-items: right;
+      max-width: 80px;
+    }
+  
+    .list-group-item.list-group-item-action {
+      flex-basis: auto;
+    }
+  
+    .list-group-item.list-group-item-action:hover .list-item-name .item-name-edit{
+      transform: translateY(25px);
+    }
+  }
+
 /* Nombre y Apellido*/
-h1.nombre {
+.display-1 {
     font-family: Georgia,serif;
     font-style:italic;
     color: rgb(241, 48, 129);
     text-shadow: 2px 2px 4px #8d8585;
-    font-size: 4rem;
-    transform: translateY(8rem)
+    transform: translateY(8rem);
 }
 
 /* Titulo "Desarroladora Web Full Stack" */
-h3.titulo {
+.titulo-banner {
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    transform: translateY(8rem);
+    transform: translateY(6rem);
 }
 
 /*boton de edicion */
 .btn.banner{
     position: absolute;
     z-index: 0;
-    
 }
+
+  
 
 /* ======Foto de Perfil =======*/
 .foto-perfil{
     position: absolute;
     z-index: 1;
     transform: translateY(-50%);
-    width: 70%;
+    width: 60%;
     padding-left: 5%;
 }
 
@@ -143,10 +200,11 @@ section.experiencia, section.educacion, section.habilidades, section.proyectos, 
 .subtitulo{
     font-family: Georgia,serif;
     font-style:italic;
-    color: rgb(241, 48, 129);
+    color: rgb(22, 22, 22);
     text-shadow: 2px 2px 4px #8d8585;
     font-size: 3rem;
 }
+
 /*=====Titulo de Curso=======*/
 .titulo-curso {
     font-family: 'Expletus Sans', cursive;
@@ -261,9 +319,30 @@ footer{
     padding: 1rem;
 }
 
-.fa-solid.fa-angle-up{
-    color: aliceblue;
+/*up*/
+.fa-regular.fa-circle-up{
+    background-attachment: scroll;
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    z-index: 9999;
+    font-size:30px;
+    color: #b8b3b3;
 }
+
+/*up
+.boton_up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    border-radius:50%;
+    border: 8px solid white;
+    font-size:20px;
+    color:white;
+    background-color: transparent;
+  }*/
+
 
 /* ===== Redes Sociales Footer ====== */
 .fab {
@@ -300,3 +379,17 @@ footer{
 #dashboard{
     background-color: rgb(226, 223, 223);
 }
+
+.item-name-edit {
+    font-size: 30px;
+    font-weight: 200;
+    position: absolute;
+    transform: translate(0, 100px);
+    transition: transform 0.9s ease, opacity 0.5s ease;
+    opacity: 0;
+  }
+
+  .list-group-item.list-group-item-action:hover .item-name-edit {
+    transform: translateX(2px);
+    opacity: 1;
+  }

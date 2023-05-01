@@ -13,92 +13,97 @@
 <body>
   <header>
     <!--nav-->
-    <nav class="navbar navbar-expand-lg bg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="Assets/IMG/APLogo-20-20.png" alt="" width="20%" height=""> 
-      #YoProgramo
-    </a>
-    <ul class="list-group list-group-horizontal">
-      <li class="list-group-item"><a href="https://www.instagram.com/vivianavd_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-      <li class="list-group-item"><a href="#" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
-      <li class="list-group-item"><a href="#" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-      <li class="list-group-item">
-        <i class="fa-solid fa-user fa-2xl" type="button">
-        </i>
-      </li>
-    </ul>
-  </div>
+  <nav class="navbar navbar-expand-lg bg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="" target="_blank">
+        <img src="Assets/IMG/APLogo-20-20.png"  alt="Argentina Programa" width="20%" height=""> 
+        #YoProgramo
+      </a>
+      <button class="navbar-toggler position-absolute top-50 end-0 translate-middle-y fa-xl text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa-solid fa-circle-chevron-down"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg- 0 align-items-center">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><a href="https://www.instagram.com/vivianavd_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+            <li class="list-group-item"><a href="#" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+            <li class="list-group-item"><a href="#" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+            <li class="list-group-item">
+              <i class="fa-solid fa-user fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#modalLogout">
+              </i>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
   </nav>
+    <!-- Modal Logout-->
+    <div class="modal" id="modalLogout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLogout">Cerrar sesión</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>¿Está seguro que desea cerrar sesión?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Cerrar sesión</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <!--/.nav-->
-<!-- Dahsboard-->
-  <section id="panel" class="panel">
-    <h1 class="subtitulo text-center">Panel de Edición</h1>
 
-    <div class="container text-center d-flex">
-      <div class="row mt-4">
-        <div class="col-4 text-center">
-          <div class="card" id="dashboard">
-            <img src="./Assets/IMG/Acerca_de_MI.png" class="card-img" alt="Edición de Acerca de mi">
-            <div class="btn-group" role="group" aria-label="First group">
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#acercademiModal"><i class="fa-solid fa-pencil"></i></a>
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#acercademiModal"><i class="fa-solid fa-trash"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 text-center">
-          <div class="card" id="dashboard">
-            <img src="./Assets/IMG/Experiencia.png" class="card-img-top" alt="Edición de experiencia laboral">
-            <div class="btn-group" role="group" aria-label="First group">
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#experienciasModal"><i class="fa-solid fa-pencil"></i></a>
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#experienciasModal"><i class="fa-solid fa-trash"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 text-center">
-          <div class="card" id="dashboard">
-            <img src="./Assets/IMG/Educacion.png" class="card-img-top" alt="Edición de educación">
-            <div class="btn-group" role="group" aria-label="First group">
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#educacionModal"><i class="fa-solid fa-pencil"></i></a>
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#educacionModal"><i class="fa-solid fa-trash"></i></a>
-            </div>
-          </div>
+<!-- Dahsboard-->
+<section id="panel" class="panel">
+  <h1 class="subtitulo text-center">PANEL DE EDICIÓN</h1>
+  <div class="container text-center d-flex">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6 text-center mt-4">
+        <button class="card" id="dashboard" data-bs-toggle="modal" data-bs-target="#acercademiModal">
+          <img src="./assets/IMG/Acerca_de_MI.png" class="card-img" alt="Edición de Acerca de mi" type="button">
+        </button>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 text-center mt-4">
+        <div class="card" id="dashboard" data-bs-toggle="modal" data-bs-target="#experienciasModal">
+          <img src="./assets/IMG/Experiencia.png" class="card-img-top" alt="Edición de experiencia laboral" type="button">
         </div>
       </div>
     </div>
-    <div class="container text-center d-flex">    
-      <div class="row mt-4">
-        <div class="col-4 text-center">
-          <div class="card" id="dashboard">
-            <img src="./Assets/IMG/Skills.png" class="card-img-top" alt="Edición de habilidades">
-            <div class="btn-group" role="group" aria-label="First group">
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#skillsModal"><i class="fa-solid fa-pencil"></i></a>
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#skillsModal"><i class="fa-solid fa-trash"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 text-center">
-          <div class="card" id="dashboard">
-            <img src="./Assets/IMG/Proyectos.png" class="card-img-top" alt="Edición de Proyecto">
-            <div class="btn-group" role="group" aria-label="First group">
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#proyectosModal"><i class="fa-solid fa-pencil"></i></a>
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#proyectosModal"><i class="fa-solid fa-trash"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 text-center">
-          <div class="card" id="dashboard">
-            <img src="./Assets/IMG/Redes_Sociales.png" class="card-img-top" alt="Edición de redes sociales">
-            <div class="btn-group" role="group" aria-label="First group">
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#redesModal"><i class="fa-solid fa-pencil"></i></a>
-              <a href="#" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#redesModal"><i class="fa-solid fa-trash"></i></a>
-            </div>
-          </div>
-        </div>
+  </div>
+  <div class="container text-center d-flex">    
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6 text-center mt-4">
+        <button class="card" id="dashboard" data-bs-toggle="modal" data-bs-target="#educacionModal">
+          <img src="./assets/IMG/Educacion.png" class="card-img-top" type="button" alt="Edición de educación" type="button">
+        </button>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 text-center mt-4">
+        <button class="card" id="dashboard" data-bs-toggle="modal" data-bs-target="#skillsModal">
+          <img src="./assets/IMG/Skills.png" class="card-img-top" alt="Edición de habilidades" type="button"> 
+        </button>
       </div>
     </div>
-  </section> 
+  </div>
+  <div class="container text-center d-flex">    
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6 text-center mt-4 ">
+        <div class="card list-group-item list-group-item-action" id="dashboard" data-bs-toggle="modal" data-bs-target="#proyectosModal">
+          <img src="./assets/IMG/Proyectos.png" class="card-img-top" alt="Edición de Proyecto" type="button"><span class="item-name-edit">Editar</span>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 text-center mt-4">
+        <button class="card" id="dashboard"  >
+          <img src="./assets/IMG/Redes_Sociales.png" class="card-img-top" type="button" href="#exampleModalToggle" data-bs-toggle="modal"alt="Edición de redes sociales">
+        </button>
+      </div>
+    </div>
+  </div>
+</section>  
 <!-- Formulario "Modal Acerca_de_MI" REVISAR ANTES DE LINKEAR -->
 <form class="bg-white rounded p-5 seccion">
   <!-- Modal -->
@@ -134,8 +139,6 @@
         <label for="descripcion" class="form-label">Modificar Descripción</label>
         <textarea type="text" class="form-control"  formControlName="descripcion"></textarea>
         </div>
-        <!--[ngClass]="{'is-invalid': Descripcion.errors && Descripcion.touched, 'is-valid': !Descripcion.errors && Descripcion.touched} ESTO VA ARRIBA
-            </div>-->
         </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -344,6 +347,10 @@
     </div>
   </div>
 </form>
+
+<!--Edicion Modal Experiencia-->
+
+
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
